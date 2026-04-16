@@ -21,7 +21,7 @@ include 'includes/header.php';
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center mb-4 mb-md-0">
                             <div class="rounded-circle overflow-hidden mx-auto border border-4 border-accent shadow" style="width: 200px; height: 200px;">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" class="w-100 h-100 object-fit-cover" alt="Minister">
+                                <img src="assets/img/members/State Minister of Tourism (Independent) Govt. Of Madhya Pradesh ,India.jpg" class="w-100 h-100 object-fit-cover" alt="Minister">
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -38,22 +38,25 @@ include 'includes/header.php';
             <div class="col-lg-10 mt-5">
                 <div class="row g-4">
                     <div class="col-md-6 reveal">
-                        <div class="glass-card p-4 h-100 shadow-sm">
-                            <h5 class="text-primary fw-bold mb-3">Dr. Ilaiya Raja T., IAS</h5>
-                            <p class="text-muted small mb-3">Batch 2009</p>
-                            <ul class="list-unstyled small text-secondary">
-                                <li class="mb-2"><i class="fas fa-check-circle text-accent me-2"></i> Secretary, Tourism Govt. of Madhya Pradesh</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-accent me-2"></i> Managing Director, Madhya Pradesh Tourism Board, Bhopal</li>
-                            </ul>
+                        <div class="glass-card p-4 h-100 shadow-sm d-flex gap-3 align-items-center">
+                            <div class="rounded-circle overflow-hidden border border-accent" style="width: 80px; height: 80px; flex-shrink: 0;">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=200" class="w-100 h-100 object-fit-cover" alt="Dr. Ilaiya Raja T.">
+                            </div>
+                            <div>
+                                <h5 class="text-primary fw-bold mb-1">Dr. Ilaiya Raja T., IAS</h5>
+                                <p class="text-muted small mb-0">Secretary Tourism, MD MPTB</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 reveal">
-                        <div class="glass-card p-4 h-100 shadow-sm">
-                            <h5 class="text-primary fw-bold mb-3">Dr. Abhay Arvind Bedeker, IAS</h5>
-                            <ul class="list-unstyled small text-secondary">
-                                <li class="mb-2"><i class="fas fa-check-circle text-accent me-2"></i> Additional Managing Director, Madhya Pradesh Tourism Board, Bhopal</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-accent me-2"></i> Director, Skill and Training</li>
-                            </ul>
+                        <div class="glass-card p-4 h-100 shadow-sm d-flex gap-3 align-items-center">
+                            <div class="rounded-circle overflow-hidden border border-accent" style="width: 80px; height: 80px; flex-shrink: 0;">
+                                <img src="assets/img/members/Dr. Abhay Arvind Bedeker, IAS.jpg" class="w-100 h-100 object-fit-cover" alt="Dr. Abhay Arvind Bedeker, IAS">
+                            </div>
+                            <div>
+                                <h5 class="text-primary fw-bold mb-1">Dr. Abhay Arvind Bedeker, IAS</h5>
+                                <p class="text-muted small mb-0">Addl. MD, MP Tourism Board</p>
+                            </div>
                         </div>
                     </div>
                 </div>

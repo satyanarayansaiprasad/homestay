@@ -59,7 +59,7 @@ include 'includes/header.php';
                 <div class="property-card p-0 mb-4 overflow-hidden shadow-sm">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800" class="w-100 h-100 object-fit-cover" alt="Roop Narayan Singh">
+                            <img src="assets/img/members/R.K. Home Stay Bhopal M.P.jpg" class="w-100 h-100 object-fit-cover" alt="Roop Narayan Singh">
                         </div>
                         <div class="col-md-8 p-4 d-flex flex-column justify-content-center">
                             <h5 class="fw-bold mb-1">Shri Roop Narayan Singh Chouhan</h5>
@@ -71,12 +71,26 @@ include 'includes/header.php';
                 <div class="property-card p-0 overflow-hidden shadow-sm">
                     <div class="row g-0">
                         <div class="col-md-4 border-end order-md-2">
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800" class="w-100 h-100 object-fit-cover" alt="Satyendtra Tiwari">
+                            <img src="assets/img/members/SKAY Home Stay Bandhavgarh National Park M.P.jpg" class="w-100 h-100 object-fit-cover" alt="Satyendtra Tiwari">
                         </div>
                         <div class="col-md-8 p-4 d-flex flex-column justify-content-center order-md-1">
                             <h5 class="fw-bold mb-1">Shri Satyendtra Tiwari</h5>
                             <p class="text-accent small mb-3">SKAY Home Stay, Bandhavgarh</p>
                             <p class="text-secondary small mb-0">Well-known wildlife expert with 40 years of tourism experience. Served MP Tourism in the past. His property has the distinction of being the first home stay of Madhya Pradesh.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Shankarlal Garg -->
+                <div class="property-card p-0 overflow-hidden shadow-sm mt-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/members/Kesar Parvat Home Stay MHOW INDORE M.P.jpg" class="w-100 h-100 object-fit-cover" alt="Dr. Shankarlal Garg">
+                        </div>
+                        <div class="col-md-8 p-4 d-flex flex-column justify-content-center">
+                            <h5 class="fw-bold mb-1">Dr. Shankarlal Garg</h5>
+                            <p class="text-accent small mb-3">Kesar Parvat Home Stay, Indore</p>
+                            <p class="text-secondary small mb-0">Retired professor with a passion for nature. Transformed 22 acres of barren land into "Keshar Parvat", a lush forest with over 40,000 trees. An expert in sustainable development and responsible tourism.</p>
                         </div>
                     </div>
                 </div>
@@ -88,10 +102,14 @@ include 'includes/header.php';
             <div class="col-lg-11">
                 <div class="row g-4">
                     <div class="col-md-6 reveal">
-                        <div class="glass-card p-4 shadow-sm h-100">
-                            <h5 class="fw-bold mb-1">Shri Sharad Dixit</h5>
-                            <p class="text-accent small mb-3">President</p>
-                            <p class="text-secondary small">National-level journalist and wildlife photographer. 30 years of experience in wildlife conservation. Runs Grand Narmada Home Stay in Bandhavgarh.</p>
+                        <div class="glass-card p-4 shadow-sm h-100 d-flex gap-3 align-items-center">
+                            <div class="rounded-circle overflow-hidden border border-accent" style="width: 80px; height: 80px; flex-shrink: 0;">
+                                <img src="assets/img/members/President.jpg" class="w-100 h-100 object-fit-cover" alt="Sharad Dixit">
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Shri Sharad Dixit</h5>
+                                <p class="text-accent small mb-0">President</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 reveal">
