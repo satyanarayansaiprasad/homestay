@@ -5,7 +5,7 @@
     <div class="container h-100 d-flex flex-column justify-content-center text-white">
         <div class="reveal">
             <h5 class="text-accent fw-bold text-uppercase mb-3">Welcome to Homestay</h5>
-            <h1 class="display-3 fw-bold mb-4">Discover Your Home <br> Away From Home</h1>
+            <h1 class="display-3 fw-bold mb-4 text-white">Discover Your Home <br> Away From Home</h1>
             <p class="lead mb-5 col-md-6">Experience the warmth of Uttar Pradesh with our hand-picked, premium homestays. Comfortable, authentic, and unforgettable.</p>
             <div class="d-flex gap-3">
                 <a href="homestays.php" class="btn btn-accent-custom px-4 py-3">Explore Homestays</a>
@@ -51,9 +51,9 @@
         <div class="row g-4 reveal">
             <?php 
             $destinations = [
-                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=800'],
                 ['name' => 'Varanasi', 'img' => 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800'],
-                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1595655455325-a131804f837c?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1628102379368-24cc7be84d28?auto=format&fit=crop&q=80&w=800'],
                 ['name' => 'Mathura', 'img' => 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=800']
             ];
             foreach($destinations as $dest): ?>
