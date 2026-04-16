@@ -4,7 +4,7 @@
 <section class="bg-primary-custom py-5">
     <div class="container text-center text-white reveal">
         <h1 class="text-white">Explore Homestays</h1>
-        <p class="opacity-75">Find the perfect place to stay in Uttar Pradesh</p>
+        <p class="opacity-75">Find the perfect place to stay in Madhya Pradesh</p>
     </div>
 </section>
 
@@ -21,10 +21,12 @@
                             <label class="form-label fw-bold">Location</label>
                             <select class="form-select">
                                 <option selected>All Cities</option>
-                                <option>Lucknow</option>
-                                <option>Agra</option>
-                                <option>Varanasi</option>
-                                <option>Mathura</option>
+                                <option>Indore</option>
+                                <option>Bhopal</option>
+                                <option>Gwalior</option>
+                                <option>Ujjain</option>
+                                <option>Jabalpur</option>
+                                <option>Pachmarhi</option>
                             </select>
                         </div>
                         <div class="mb-4">
@@ -77,12 +79,12 @@
                 <div class="row g-4 reveal">
                     <?php 
                     $properties = [
-                        ['title' => 'The Grand Nawab Residence', 'location' => 'Hazratganj, Lucknow', 'price' => '5,500', 'img' => 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1000'],
-                        ['title' => 'Ganges View Homestay', 'location' => 'Assi Ghat, Varanasi', 'price' => '3,200', 'img' => 'https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&q=80&w=1000'],
-                        ['title' => 'Taj Heritage Appartment', 'location' => 'Fatehabad Road, Agra', 'price' => '4,000', 'img' => 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1000'],
-                        ['title' => 'Krishna Kunj Heritage', 'location' => 'Vrindavan, Mathura', 'price' => '2,800', 'img' => 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&q=80&w=1000'],
-                        ['title' => 'Gomti Riverside Villa', 'location' => 'Gomti Nagar, Lucknow', 'price' => '6,500', 'img' => 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=1000'],
-                        ['title' => 'Sandhya Homestay', 'location' => 'Dashashwamedh, Varanasi', 'price' => '3,500', 'img' => 'https://images.unsplash.com/photo-1444201983204-c43cbd584d93?auto=format&fit=crop&q=80&w=1000']
+                        ['title' => 'Indore Heritage Manor', 'location' => 'Vijay Nagar, Indore', 'price' => '5,500', 'img' => 'https://images.unsplash.com/photo-1512917774080-9991f1c4c4c750?auto=format&fit=crop&q=80&w=1000'],
+                        ['title' => 'Bhopal Lake View', 'location' => 'Upper Lake, Bhopal', 'price' => '3,200', 'img' => 'https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&q=80&w=1000'],
+                        ['title' => 'Gwalior Fort Stay', 'location' => 'Near Fort, Gwalior', 'price' => '4,000', 'img' => 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1000'],
+                        ['title' => 'Mahakal Spiritual Home', 'location' => 'Near Temple, Ujjain', 'price' => '2,800', 'img' => 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&q=80&w=1000'],
+                        ['title' => 'Bhedaghat River View', 'location' => 'Jabalpur', 'price' => '6,500', 'img' => 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=1000'],
+                        ['title' => 'Satpura Green retreat', 'location' => 'Pachmarhi', 'price' => '3,500', 'img' => 'https://images.unsplash.com/photo-1444201983204-c43cbd584d93?auto=format&fit=crop&q=80&w=1000']
                     ];
                     foreach($properties as $property): ?>
                     <div class="col-md-6">

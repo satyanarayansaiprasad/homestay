@@ -22,7 +22,7 @@
                     </div>
                     <div>
                         <h5 class="mb-1">Our Office</h5>
-                        <p class="text-muted mb-0">12/45 Gomti Nagar, Lucknow, Uttar Pradesh, 226010</p>
+                        <p class="text-muted mb-0">Vijay Nagar, Indore, Madhya Pradesh, 452010</p>
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@
         <div class="text-center text-muted">
             <i class="fas fa-map-marked-alt display-1 mb-3"></i>
             <h4>Interactive Map Placeholder</h4>
-            <p>Lucknow, Uttar Pradesh</p>
+            <p>Indore, Madhya Pradesh</p>
         </div>
     </div>
 </div>

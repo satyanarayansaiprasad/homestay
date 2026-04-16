@@ -4,7 +4,7 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <h3 class="text-white mb-4">HOME<span class="text-accent">STAY</span></h3>
-                <p class="text-secondary">Discover unique and comfortable homestays across Uttar Pradesh. Experience local culture with the comfort of a home.</p>
+                <p class="text-secondary">Explore the Heart of India. Discover unique and comfortable homestays across Madhya Pradesh. Experience local culture with the comfort of a home.</p>
                 <div class="d-flex gap-3 mt-4">
                     <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
@@ -31,7 +31,7 @@
             <div class="col-lg-3">
                 <h5 class="text-white mb-4">Contact Us</h5>
                 <ul class="list-unstyled text-secondary">
-                    <li class="mb-2"><i class="fas fa-map-marker-alt text-accent me-2"></i>Lucknow, Uttar Pradesh</li>
+                    <li class="mb-2"><i class="fas fa-map-marker-alt text-accent me-2"></i>Indore, Madhya Pradesh</li>
                     <li class="mb-2"><i class="fas fa-phone text-accent me-2"></i>+91 123 456 7890</li>
                     <li class="mb-2"><i class="fas fa-envelope text-accent me-2"></i>info@homestay.com</li>
                 </ul>

@@ -1,10 +1,9 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- Hero Section -->
 <section class="bg-primary-custom py-5">
     <div class="container text-center text-white reveal">
         <h1 class="text-white display-4">Our Story</h1>
-        <p class="opacity-75 lead">Rediscovering hospitality in the heart of Uttar Pradesh</p>
+        <p class="opacity-75 lead">Rediscovering hospitality in the heart of Madhya Pradesh</p>
     </div>
 </section>
 
@@ -14,7 +13,7 @@
             <div class="col-lg-6 reveal">
                 <h2 class="section-title">About Homestay</h2>
                 <p>Founded in 2024, Homestay was born out of a simple idea: to connect travelers with the authentic soul of India. We believe that the best way to experience a culture is not from a hotel room, but from within a local home.</p>
-                <p>Our platform exclusively features handpicked properties in Uttar Pradesh, a state rich in history, spirituality, and diverse traditions. From the grand havelis of Lucknow to the spiritual retreats of Varanasi, every home on our platform has a story to tell.</p>
+                <p>Our platform exclusively features handpicked properties in Madhya Pradesh - the Heart of India, a state rich in history, spirituality, and diverse traditions. From the grand palaces of Gwalior to the spiritual retreats of Ujjain, every home on our platform has a story to tell.</p>
                 
                 <div class="row g-4 mt-4">
                     <div class="col-6">

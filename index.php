@@ -6,7 +6,7 @@
         <div class="reveal">
             <h5 class="text-accent fw-bold text-uppercase mb-3">Welcome to Homestay</h5>
             <h1 class="display-3 fw-bold mb-4 text-white">Discover Your Home <br> Away From Home</h1>
-            <p class="lead mb-5 col-md-6">Experience the warmth of Uttar Pradesh with our hand-picked, premium homestays. Comfortable, authentic, and unforgettable.</p>
+            <p class="lead mb-5 col-md-6">Experience the warmth of Madhya Pradesh with our hand-picked, premium homestays. Comfortable, authentic, and unforgettable.</p>
             <div class="d-flex gap-3">
                 <a href="homestays.php" class="btn btn-accent-custom px-4 py-3">Explore Homestays</a>
                 <a href="about.php" class="btn btn-outline-light px-4 py-3">Learn More</a>
@@ -45,16 +45,16 @@
 <section class="section-padding">
     <div class="container">
         <div class="section-title reveal">
-            <h2>Top Destinations in UP</h2>
-            <p class="text-muted">Explore the most beautiful cities of Uttar Pradesh</p>
+            <h2>Top Destinations in MP</h2>
+            <p class="text-muted">Explore the most beautiful cities of Madhya Pradesh</p>
         </div>
         <div class="row g-4 reveal">
             <?php 
             $destinations = [
-                ['name' => 'Agra', 'img' => 'assets/img/agra.jpg'],
-                ['name' => 'Varanasi', 'img' => 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800'],
-                ['name' => 'Lucknow', 'img' => 'assets/img/lucknow.jpg'],
-                ['name' => 'Mathura', 'img' => 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=800']
+                ['name' => 'Indore', 'img' => 'https://images.unsplash.com/photo-1707914444583-9b87f877f3dc?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Bhopal', 'img' => 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Gwalior', 'img' => 'https://images.unsplash.com/photo-1632734125633-8f0a37943cc9?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Ujjain', 'img' => 'https://images.unsplash.com/photo-1693121542158-944281679535?auto=format&fit=crop&q=80&w=800']
             ];
             foreach($destinations as $dest): ?>
             <div class="col-md-3 col-6">
@@ -87,11 +87,11 @@
                     </div>
                     <div class="card-body p-4">
                         <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h5 class="card-title mb-0">Royal Heritage Vila</h5>
+                            <h5 class="card-title mb-0">Royal Heritage Hotel</h5>
                             <div class="text-accent small"><i class="fas fa-star"></i> 4.9</div>
                         </div>
-                        <p class="text-muted small mb-3"><i class="fas fa-map-marker-alt me-1"></i> Gomti Nagar, Lucknow</p>
-                        <p class="card-text text-secondary mb-4">A beautiful heritage villa with modern amenities and a lush green garden.</p>
+                        <p class="text-muted small mb-3"><i class="fas fa-map-marker-alt me-1"></i> Vijay Nagar, Indore</p>
+                        <p class="card-text text-secondary mb-4">A beautiful heritage style hotel with modern amenities and a lush green garden.</p>
                         <div class="d-flex gap-3 mb-4 text-muted small">
                             <span><i class="fas fa-wifi me-1"></i> Wifi</span>
                             <span><i class="fas fa-parking me-1"></i> Parking</span>
