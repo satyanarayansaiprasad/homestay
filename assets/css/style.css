@@ -3,6 +3,7 @@
 :root {
     --primary-color: #0f172a;
     --primary-light: #1e293b;
+    --primary-dark: #020617;
     --accent-color: #fbbf24;
     --accent-hover: #f59e0b;
     --text-main: #1e293b;
@@ -165,4 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Custom Utilities */
 .text-accent { color: var(--accent-color); }
 .bg-primary-custom { background-color: var(--primary-color); }
+.bg-primary-light { background-color: var(--primary-light); }
 .rounded-2xl { border-radius: 1.5rem; }
+
+.btn-xs { padding: 0.25rem 0.5rem; font-size: 0.75rem; }
+.fs-xs { font-size: 0.7rem; }
+.hover-accent:hover { color: var(--accent-color) !important; }

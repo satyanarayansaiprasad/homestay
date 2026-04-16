@@ -4,7 +4,7 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <h3 class="text-white mb-4">HOME<span class="text-accent">STAY</span></h3>
-                <p class="text-secondary">Explore the Heart of India. Discover unique and comfortable homestays across Madhya Pradesh. Experience local culture with the comfort of a home.</p>
+                <p class="text-secondary small">Official portal of the <strong>Home Stay Owners Welfare Society Madhya Pradesh</strong>. We unite hosts across the state to promote responsible tourism and authentic hospitality.</p>
                 <div class="d-flex gap-3 mt-4">
                     <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
@@ -14,10 +14,11 @@
             <div class="col-lg-2">
                 <h5 class="text-white mb-4">Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="index.php" class="text-secondary text-decoration-none">Home</a></li>
-                    <li><a href="homestays.php" class="text-secondary text-decoration-none">Homestays</a></li>
-                    <li><a href="about.php" class="text-secondary text-decoration-none">About Us</a></li>
-                    <li><a href="contact.php" class="text-secondary text-decoration-none">Contact</a></li>
+                    <li><a href="index.php" class="text-secondary text-decoration-none small">Home</a></li>
+                    <li><a href="association.php" class="text-secondary text-decoration-none small">About Association</a></li>
+                    <li><a href="administration.php" class="text-secondary text-decoration-none small">Administration</a></li>
+                    <li><a href="board.php" class="text-secondary text-decoration-none small">Leadership Board</a></li>
+                    <li><a href="schemes.php" class="text-secondary text-decoration-none small">Official Schemes</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">

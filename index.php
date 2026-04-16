@@ -1,19 +1,38 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- Hero Section -->
-<section class="hero-section position-relative overflow-hidden" style="height: 90vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;">
+<section class="hero-section position-relative overflow-hidden" style="height: 80vh; background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url('https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;">
     <div class="container h-100 d-flex flex-column justify-content-center text-white">
         <div class="reveal">
-            <h5 class="text-accent fw-bold text-uppercase mb-3">Welcome to Homestay</h5>
-            <h1 class="display-3 fw-bold mb-4 text-white">Discover Your Home <br> Away From Home</h1>
-            <p class="lead mb-5 col-md-6">Experience the warmth of Madhya Pradesh with our hand-picked, premium homestays. Comfortable, authentic, and unforgettable.</p>
+            <h5 class="text-accent fw-bold text-uppercase mb-3">Welcome to the Official Portal</h5>
+            <h1 class="display-3 fw-bold mb-4 text-white">Madhya Pradesh <br> Homestay Association</h1>
+            <p class="lead mb-5 col-md-7">Uniting homestay, village stay, farm stay, and B&B owners across the state to establish Madhya Pradesh as a significant destination for responsible tourism globally.</p>
             <div class="d-flex gap-3">
-                <a href="homestays.php" class="btn btn-accent-custom px-4 py-3">Explore Homestays</a>
-                <a href="about.php" class="btn btn-outline-light px-4 py-3">Learn More</a>
+                <a href="upload-form.php" class="btn btn-accent-custom px-4 py-3 fw-bold shadow">Join the Association</a>
+                <a href="association.php" class="btn btn-outline-light px-4 py-3 fw-bold">Learn About Us</a>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Association Highlight -->
+<div class="bg-white py-5 shadow-sm">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-8 reveal">
+                <h3 class="fw-bold text-primary mb-3">Empowering Home Stay Owners</h3>
+                <p class="text-secondary mb-0">The <strong>Homestay Owners Welfare Society Madhya Pradesh</strong> was formed by genuine hosts to provide proper guidance, representation, and a unified marketing platform. We focus on enhancing local hospitality, empowering women, and preserving cultural heritage.</p>
+            </div>
+            <div class="col-lg-4 text-center reveal">
+                <div class="p-4 border border-accent border-2 rounded-2xl">
+                    <h5 class="fw-bold mb-2">Member Listing Portal</h5>
+                    <p class="small text-muted mb-3">Are you a registered homestay owner under MP Tourism Board?</p>
+                    <a href="upload-form.php" class="btn btn-primary-custom w-100 py-3">Upload Your Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Search Strip -->
 <div class="container mt-n5 position-relative z-index-1">
