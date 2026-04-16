@@ -3,7 +3,10 @@
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
-                <h3 class="text-white mb-4">HOME<span class="text-accent">STAY</span></h3>
+                <div class="d-flex align-items-center mb-4">
+                    <img src="assets/img/Logo.jpeg" alt="Homestay Logo" class="me-2 rounded shadow-sm" style="height: 40px; width: auto; object-fit: contain;">
+                    <h3 class="text-white mb-0">HOME<span class="text-accent">STAY</span></h3>
+                </div>
                 <p class="text-secondary small">Official portal of the <strong>Home Stay Owners Welfare Society Madhya Pradesh</strong>. We unite hosts across the state to promote responsible tourism and authentic hospitality.</p>
                 <div class="d-flex gap-3 mt-4">
                     <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
