@@ -51,9 +51,9 @@
         <div class="row g-4 reveal">
             <?php 
             $destinations = [
-                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&q=80&w=800'],
                 ['name' => 'Varanasi', 'img' => 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800'],
-                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1628102379368-24cc7be84d28?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1544281679-5357152faa9a?auto=format&fit=crop&q=80&w=800'],
                 ['name' => 'Mathura', 'img' => 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=800']
             ];
             foreach($destinations as $dest): ?>
@@ -61,7 +61,7 @@
                 <div class="position-relative overflow-hidden rounded-2xl shadow-sm destination-card" style="height: 350px;">
                     <img src="<?= $dest['img'] ?>" class="w-100 h-100 object-fit-cover transition-img" alt="<?= $dest['name'] ?>">
                     <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark text-white">
-                        <h4 class="mb-0"><?= $dest['name'] ?></h4>
+                        <h4 class="mb-0 text-white"><?= $dest['name'] ?></h4>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="property-card">
                     <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1000" class="card-img-top" alt="Property">
+                        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&q=80&w=1000" class="card-img-top" alt="Property">
                         <span class="price-tag">₹4,500 / night</span>
                     </div>
                     <div class="card-body p-4">
