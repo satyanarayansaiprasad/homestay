@@ -51,9 +51,9 @@
         <div class="row g-4 reveal">
             <?php 
             $destinations = [
-                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1564507592333-c60657eea023?auto=format&fit=crop&q=80&w=800'],
                 ['name' => 'Varanasi', 'img' => 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800'],
-                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1544281679-5357152faa9a?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1583196602325-45455913e648?auto=format&fit=crop&q=80&w=800'],
                 ['name' => 'Mathura', 'img' => 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=800']
             ];
             foreach($destinations as $dest): ?>
