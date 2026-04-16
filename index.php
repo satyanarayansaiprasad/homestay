@@ -15,6 +15,31 @@
     </div>
 </section>
 
+<!-- Search Strip -->
+<div class="container mt-n5 position-relative z-index-1">
+    <div class="glass-card p-4 shadow-lg reveal">
+        <form class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label class="form-label fw-bold">Where to?</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent border-end-0"><i class="fas fa-map-marker-alt text-accent"></i></span>
+                    <input type="text" class="form-control border-start-0" placeholder="Destination, City...">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Check In</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-bold">Check Out</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary-custom w-100">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <!-- Top Destinations -->
 <section class="section-padding">
@@ -26,9 +51,9 @@
         <div class="row g-4 reveal">
             <?php 
             $destinations = [
-                ['name' => 'Agra', 'img' => 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Agra', 'img' => 'assets/img/agra.jpg'],
                 ['name' => 'Varanasi', 'img' => 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800'],
-                ['name' => 'Lucknow', 'img' => 'https://images.unsplash.com/photo-1628102379368-24cc7be84d28?auto=format&fit=crop&q=80&w=800'],
+                ['name' => 'Lucknow', 'img' => 'assets/img/lucknow.jpg'],
                 ['name' => 'Mathura', 'img' => 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=800']
             ];
             foreach($destinations as $dest): ?>
