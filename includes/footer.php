@@ -43,12 +43,15 @@
             </div>
         </div>
         <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.05);">
-        <div class="row g-2">
+        <div class="row g-3 align-items-center">
             <div class="col-md-6 text-center text-md-start">
                 <p class="mb-0 small">&copy; <?php echo date('Y'); ?> MyHomestayMP. All rights reserved.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <p class="mb-0 small">Member of Homestay Owners Welfare Society MP</p>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+                    <p class="mb-0 small">Member of Homestay Owners Welfare Society MP</p>
+                    <img src="<?php echo url('assets/img/gov logo.jpeg'); ?>" alt="Gov Logo" height="30" class="rounded bg-white p-1">
+                </div>
             </div>
         </div>
     </div>

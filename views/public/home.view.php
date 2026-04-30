@@ -3,6 +3,10 @@
 <!-- Hero Section -->
 <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
     <div class="container hero-content text-center">
+        <div class="mb-4 animate-fadeIn">
+            <img src="<?php echo url('assets/img/gov logo.jpeg'); ?>" alt="Government of MP" height="70" class="bg-white p-2 rounded-circle shadow-lg border border-2 border-white mb-2">
+            <div class="text-white small fw-bold text-uppercase tracking-wider" style="letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Recognized by MP Tourism</div>
+        </div>
         <h1 class="display-3 fw-bold mb-4 text-white">Experience the Real Madhya Pradesh</h1>
         <p class="lead mb-5 text-white">Authentic Homestays, Farm Stays & Village Stays in the Heart of India.</p>
         <div class="d-flex flex-column flex-md-row justify-content-center gap-3 px-4 px-md-0">
