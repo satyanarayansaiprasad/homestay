@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /development/homestay/
+
+# Redirect trailing slashes
+RewriteRule ^(.*)/$ $1 [L,R=301]
+
+# Handle Front Controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
