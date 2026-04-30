@@ -3,60 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homestay - Premium Stays in Madhya Pradesh</title>
+    <title><?php echo isset($page_title) ? $page_title . ' | ' . SITE_NAME : SITE_NAME; ?></title>
+    <meta name="description" content="Discover premium homestays, farm stays, and village stays in Madhya Pradesh with MyHomestayMP.">
+    
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo url('assets/css/style.css'); ?>">
 </head>
 <body>
 
-<!-- Top Branding Bar -->
-<div class="bg-primary-custom py-2 border-bottom border-secondary border-opacity-25">
-    <div class="container d-flex justify-content-between align-items-center">
-        <span class="text-white small fw-light">
-            <i class="fas fa-certificate text-accent me-2"></i>
-            PORTAL RUN BY – HOME STAY OWNERS WELFARE SOCIETY (ASSOCIATION) MADHYA PRADESH, INDIA
-        </span>
-        <div class="d-none d-lg-block">
-            <a href="upload-form.php" class="btn btn-accent-custom btn-xs py-1 px-3 fs-xs fw-bold text-uppercase">Upload Your Detail (Form)</a>
-        </div>
-    </div>
-</div>
-
-<!-- Main Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom py-3 shadow-sm border-bottom border-secondary border-opacity-10">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.php">
-            <img src="assets/img/Logo.jpeg" alt="Homestay Logo" class="me-2 rounded shadow-sm" style="height: 50px; width: auto; object-fit: contain;">
-            <span class="fw-800 fs-3 text-white">HOME<span class="text-accent">STAY</span></span>
+        <a class="navbar-brand d-flex align-items-center" href="<?php echo url(); ?>">
+            <img src="<?php echo url('assets/img/Logo.jpeg'); ?>" alt="MyHomestayMP Logo" height="35" class="me-2 rounded shadow-sm">
+            <span>MyHomestayMP</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <i class="fas fa-bars"></i>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item"><a class="nav-link px-3 active" href="association.php">About Association</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="index.php#destinations">MP Destinations</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="homestays.php">The Home Stay</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="owner/register.php">List Your Property</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="contact.php">Contact Us</a></li>
+            <ul class="navbar-nav ms-auto align-items-center mt-3 mt-lg-0">
+                <li class="nav-item w-100 text-center text-lg-start">
+                    <a class="nav-link py-2" href="<?php echo url(); ?>">Home</a>
+                </li>
+                <li class="nav-item w-100 text-center text-lg-start">
+                    <a class="nav-link py-2" href="<?php echo url('listings.php'); ?>">Homestays</a>
+                </li>
+                <li class="nav-item dropdown w-100 text-center text-lg-start">
+                    <a class="nav-link dropdown-toggle py-2" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item py-2" href="<?php echo url('about'); ?>">Our Mission</a></li>
+                        <li><a class="dropdown-item py-2" href="<?php echo url('social-heads'); ?>">Social Heads</a></li>
+                        <li><a class="dropdown-item py-2" href="<?php echo url('governing-body'); ?>">Governing Body</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ms-lg-2 w-100 w-lg-auto text-center text-lg-start">
+                    <a class="nav-link py-2" href="<?php echo url('gallery'); ?>">Gallery</a>
+                </li>
+                <li class="nav-item ms-lg-2 w-100 w-lg-auto text-center text-lg-start">
+                    <a class="nav-link py-2" href="<?php echo url('contact.php'); ?>">Contact</a>
+                </li>
+                
+                <?php if(is_admin_logged_in()): ?>
+                    <li class="nav-item dropdown ms-lg-3 w-100 w-lg-auto mt-2 mt-lg-0">
+                        <a class="btn btn-outline-danger w-100 w-lg-auto dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-shield me-1"></i> Admin
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-lg-2" aria-labelledby="adminDropdown">
+                            <li><a class="dropdown-item py-2" href="<?php echo url('admin/dashboard.php'); ?>"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a></li>
+                            <li><hr class="dropdown-divider opacity-50"></li>
+                            <li><a class="dropdown-item py-2 text-danger" href="<?php echo url('admin/logout.php'); ?>"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                <?php elseif(is_logged_in()): ?>
+                    <li class="nav-item dropdown ms-lg-3 w-100 w-lg-auto mt-2 mt-lg-0">
+                        <a class="btn btn-primary-custom w-100 w-lg-auto dropdown-toggle" href="#" id="ownerDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle me-1"></i> Hi, <?php echo explode(' ', $_SESSION['user_name'])[0]; ?>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-lg-2" aria-labelledby="ownerDropdown">
+                            <li><a class="dropdown-item py-2" href="<?php echo url('owner/dashboard.php'); ?>"><i class="fas fa-th-large me-2"></i>My Dashboard</a></li>
+                            <li><a class="dropdown-item py-2" href="<?php echo url('owner/add_property.php'); ?>"><i class="fas fa-plus me-2"></i>Add Property</a></li>
+                            <li><hr class="dropdown-divider opacity-50"></li>
+                            <li><a class="dropdown-item py-2 text-danger" href="<?php echo url('owner/logout.php'); ?>"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                <?php else: ?>
+                    <li class="nav-item ms-lg-3 w-100 w-lg-auto mt-3 mt-lg-0">
+                        <div class="d-grid d-lg-flex gap-2">
+                            <a class="btn btn-outline-success px-lg-4 py-2 text-nowrap d-flex align-items-center justify-content-center" href="<?php echo url('owner/login.php'); ?>">Login</a>
+                            <a class="btn btn-primary-custom px-lg-4 py-2 text-nowrap d-flex align-items-center justify-content-center" href="<?php echo url('owner/register.php'); ?>">List Property</a>
+                        </div>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Second Tier Nav (Sub-menu) -->
-<div class="bg-primary-light py-2 shadow-sm d-none d-lg-block">
-    <div class="container">
-        <ul class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link py-1 px-3 text-white-50 small hover-accent" href="administration.php"><i class="fas fa-user-tie me-1"></i> Tourism Administrator</a></li>
-            <li class="nav-item"><a class="nav-link py-1 px-3 text-white-50 small hover-accent" href="homestays.php"><i class="fas fa-map-marked-alt me-1"></i> City Wise Destination</a></li>
-            <li class="nav-item"><a class="nav-link py-1 px-3 text-white-50 small hover-accent" href="schemes.php"><i class="fas fa-file-invoice me-1"></i> The Scheme</a></li>
-            <li class="nav-item"><a class="nav-link py-1 px-3 text-white-50 small hover-accent" href="schemes.php#rules"><i class="fas fa-gavel me-1"></i> Rule Regulation</a></li>
-            <li class="nav-item"><a class="nav-link py-1 px-3 text-white-50 small hover-accent" href="board.php"><i class="fas fa-users me-1"></i> The Society</a></li>
-        </ul>
+<main>
+<?php
+$flash = get_flash_message();
+if ($flash):
+?>
+<div class="container mt-3">
+    <div class="alert alert-<?php echo $flash['type']; ?> alert-dismissible fade show" role="alert">
+        <?php echo $flash['message']; ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 </div>
+<?php endif; ?>

@@ -1,31 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Reveal animation logic
-    const reveals = document.querySelectorAll('.reveal');
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('MyHomestayMP - Script Loaded');
     
-    const revealOnScroll = () => {
-        for (let i = 0; i < reveals.length; i++) {
-            const windowHeight = window.innerHeight;
-            const elementTop = reveals[i].getBoundingClientRect().top;
-            const elementVisible = 150;
-            
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add('active');
-            }
-        }
-    };
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial check
-
-    // Navbar scroll effect
-    const navbar = document.querySelector('.navbar-custom');
+    // Simple sticky header adjustment
+    const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.style.padding = '0.5rem 0';
-            navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+            navbar.classList.add('shadow-sm');
         } else {
             navbar.style.padding = '1rem 0';
-            navbar.style.background = 'rgba(15, 23, 42, 0.9)';
+            navbar.classList.remove('shadow-sm');
         }
     });
 });
