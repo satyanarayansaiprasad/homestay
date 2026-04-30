@@ -3,10 +3,6 @@
 <!-- Hero Section -->
 <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
     <div class="container hero-content text-center">
-        <div class="mb-4 animate-fadeIn">
-            <img src="<?php echo url('assets/img/gov logo.jpeg'); ?>" alt="Government of MP" height="70" class="bg-white p-2 rounded-circle shadow-lg border border-2 border-white mb-2">
-            <div class="text-white small fw-bold text-uppercase tracking-wider" style="letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Recognized by MP Tourism</div>
-        </div>
         <h1 class="display-3 fw-bold mb-4 text-white">Experience the Real Madhya Pradesh</h1>
         <p class="lead mb-5 text-white">Authentic Homestays, Farm Stays & Village Stays in the Heart of India.</p>
         <div class="d-flex flex-column flex-md-row justify-content-center gap-3 px-4 px-md-0">
@@ -136,13 +132,21 @@
 </section>
 
 <!-- CTA Section -->
-<section class="py-5 mb-5">
+<section class="py-5">
     <div class="container">
         <div class="bg-primary-custom rounded-4 p-4 p-md-5 text-center text-white shadow-lg">
             <h2 class="text-white mb-3">Are you a Homestay Owner?</h2>
             <p class="lead mb-4 opacity-75">Join the Homestay Owners Welfare Society MP and list your property today!</p>
             <a href="<?php echo url('owner/register.php'); ?>" class="btn btn-light btn-lg text-primary-custom px-5 fw-bold">Join Now</a>
         </div>
+    </div>
+</section>
+
+<!-- Partners/Gov Section -->
+<section class="py-5 bg-light border-top">
+    <div class="container text-center">
+        <p class="text-muted small fw-bold text-uppercase mb-4" style="letter-spacing: 2px;">In Association With</p>
+        <img src="<?php echo url('assets/img/gov logo.jpeg'); ?>" alt="Government of MP" height="100" class="shadow-sm rounded-4 bg-white p-3">
     </div>
 </section>
 
